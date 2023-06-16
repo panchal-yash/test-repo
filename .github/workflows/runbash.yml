@@ -29,7 +29,7 @@ jobs:
         run: sudo apt-get update -y && sudo apt-get install ansible -y
       # Runs a single command using the runners shell
       - name: Give write perimssion to the bash script
-        run: chmod +x pmm-framework.sh
+        run: chmod +x ./pmm-tests/pmm-framework.sh
         
       - name: Run the pmm container in background
         run: docker run --detach --restart always --publish 443:443 --name pmm-server perconalab/pmm-server:dev-latest
