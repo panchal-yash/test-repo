@@ -35,4 +35,4 @@ jobs:
         run: docker run --detach --restart always --publish 443:443 --name pmm-server perconalab/pmm-server:dev-latest
         
       - name: Run the bash script
-        run: cd pmm-tests && ./pmm-framework.sh --ms-version 8.0 --addclient=ms,1
+        run: cd pmm-tests && ./pmm-framework.sh --ms-version 8.0 --addclient=ms,1 --pmm2 
