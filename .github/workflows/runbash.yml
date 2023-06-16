@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Give write perimssion to the bash script
-        run: chmod +x script.sh
+        run: chmod +x pmm-framework.sh
         
       - name: Run the bash script
-        run: ./script.sh
+        run: ./pmm-framework.sh --ms-version 8.0 --mo-version 6.0 --ps-version 8.0 --modb-version 4.4 --md-version 10.6 --pgsql-version 13 --pxc-version 8.0 --pdpgsql-version 15.2 --download --addclient=ms,1 --addclient=md,1 --addclient=pxc,3 --with-proxysql --pmm2 --pmm2 --dbdeployer --run-load-pmm2 --query-source=slowlog --pmm2-server-ip=18.222.232.155
